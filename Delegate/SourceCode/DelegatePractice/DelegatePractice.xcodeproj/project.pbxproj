@@ -12,6 +12,7 @@
 		3C59E40C230A43E60083FF80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C59E40A230A43E60083FF80 /* Main.storyboard */; };
 		3C59E40E230A43E70083FF80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C59E40D230A43E70083FF80 /* Assets.xcassets */; };
 		3C59E411230A43E70083FF80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C59E40F230A43E70083FF80 /* LaunchScreen.storyboard */; };
+		3C59E419230A44B90083FF80 /* SelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C59E418230A44B90083FF80 /* SelectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3C59E40D230A43E70083FF80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C59E410230A43E70083FF80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C59E412230A43E70083FF80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C59E418230A44B90083FF80 /* SelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				3C59E406230A43E60083FF80 /* AppDelegate.swift */,
 				3C59E408230A43E60083FF80 /* ViewController.swift */,
+				3C59E418230A44B90083FF80 /* SelectionView.swift */,
 				3C59E40A230A43E60083FF80 /* Main.storyboard */,
 				3C59E40D230A43E70083FF80 /* Assets.xcassets */,
 				3C59E40F230A43E70083FF80 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				3C59E409230A43E60083FF80 /* ViewController.swift in Sources */,
 				3C59E407230A43E60083FF80 /* AppDelegate.swift in Sources */,
+				3C59E419230A44B90083FF80 /* SelectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
