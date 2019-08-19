@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C1E8739230AF4CB00E09CAC /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1E8738230AF4CB00E09CAC /* ListTableViewCell.swift */; };
 		3C59E429230A90790083FF80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C59E428230A90790083FF80 /* AppDelegate.swift */; };
 		3C59E42E230A90790083FF80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C59E42C230A90790083FF80 /* Main.storyboard */; };
 		3C59E430230A907B0083FF80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C59E42F230A907B0083FF80 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C1E8738230AF4CB00E09CAC /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		3C59E425230A90790083FF80 /* PassValuePractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassValuePractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C59E428230A90790083FF80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C59E42D230A90790083FF80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C1E8737230AF49F00E09CAC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3C1E8738230AF4CB00E09CAC /* ListTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		3C59E41C230A90790083FF80 = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				3C59E428230A90790083FF80 /* AppDelegate.swift */,
+				3C1E8737230AF49F00E09CAC /* View */,
 				3C59E43E230AA5320083FF80 /* Controller */,
 				3C59E42C230A90790083FF80 /* Main.storyboard */,
 				3C59E42F230A907B0083FF80 /* Assets.xcassets */,
@@ -147,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C59E43D230AA4F20083FF80 /* AddItemViewController.swift in Sources */,
+				3C1E8739230AF4CB00E09CAC /* ListTableViewCell.swift in Sources */,
 				3C59E43B230AA4DA0083FF80 /* ToDoListViewController.swift in Sources */,
 				3C59E429230A90790083FF80 /* AppDelegate.swift in Sources */,
 			);

@@ -12,11 +12,14 @@ class AddItemViewController: UIViewController {
 
     @IBOutlet weak var inputField: UITextField!
     
+    var text: String?
+    
     var touchHandler: ((String) -> Void)?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        inputField.text = text
     }
     
     @IBAction func didTouchButton(_ sender: UIButton) {

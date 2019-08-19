@@ -10,7 +10,7 @@ import UIKit
 
 class ToDoListViewController: UIViewController {
 
-    var datas: [String] = ["1", "2", "3", "4"]
+    var datas: [String] = ["1", "2", "3", "4", "5"]
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -43,14 +43,40 @@ extension ToDoListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "Cell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
-        cell.textLabel?.text = datas[indexPath.row]
+        guard let listCell = cell as? ListTableViewCell else { return cell }
         
-        return cell
+        listCell.listLabel.text = datas[indexPath.row]
+        
+        return listCell
     }
 }
 
 extension ToDoListViewController: UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        guard let addItemVC = mainStoryboard.instantiateViewController(
+            withIdentifier: "AddItemViewController"
+            ) as? AddItemViewController else {
+                
+                return
+        }
+        
+        addItemVC.text = datas[indexPath.row]
+        
+        addItemVC.touchHandler = { [weak self] text in
+            
+            self?.datas[indexPath.row] = text
+            
+            tableView.reloadData()
+        }
+        
+        show(addItemVC, sender: nil)
+    }
 }
