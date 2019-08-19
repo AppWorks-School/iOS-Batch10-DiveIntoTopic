@@ -49,6 +49,13 @@ extension ToDoListViewController: UITableViewDataSource {
         
         listCell.listLabel.text = datas[indexPath.row]
         
+        listCell.deleteHandler = { [weak self] in
+            
+            self?.datas.remove(at: indexPath.row)
+            
+            tableView.reloadData()
+        }
+        
         return listCell
     }
 }

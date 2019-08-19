@@ -14,6 +14,8 @@ class ListTableViewCell: UITableViewCell {
     
     @IBOutlet weak var deleteBtn: UIButton!
     
+    var deleteHandler: (() -> Void)?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     
@@ -22,6 +24,12 @@ class ListTableViewCell: UITableViewCell {
         deleteBtn.layer.borderWidth = 1
         
         deleteBtn.layer.cornerRadius = 5.0
+        
+        deleteBtn.addTarget(self, action: #selector(deleteBtnDidTouch(_:)), for: .touchUpInside)
     }
-
+    
+    @objc func deleteBtnDidTouch(_ button: UIButton) {
+        
+        deleteHandler?()
+    }
 }
