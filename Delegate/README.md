@@ -1,7 +1,5 @@
 # Delegate
 
-### Before Assignment
-
 ### Assignment
 請設計一個 Class 名為 `SelectionView`，其所擁有的功能如下：
 
