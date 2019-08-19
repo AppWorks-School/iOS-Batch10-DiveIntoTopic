@@ -2,10 +2,6 @@
 
 ### Before Assignment
 
-下圖是 [2019 Mopcon](https://mopcon.org/2019/) 官方 iOS APP 的 gif 檔，可以看到在**議程**頁面與**社群頁面**底下，各有一個可以切換畫面內容的 `View`, 分別是切換不同日期的議程與主辦社群與志工組織的類別。
-
-<img src="https://github.com/Wuchiwei/iOS/blob/master/Delegate/images/2019_mopcon.gif" alt="2019 MOPCON" width="433" height="860">
-
 ### Assignment
 請設計一個 Class 名為 `SelectionView`，其所擁有的功能如下：
 
