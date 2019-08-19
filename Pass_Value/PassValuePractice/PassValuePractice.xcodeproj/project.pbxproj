@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		3C59E429230A90790083FF80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C59E428230A90790083FF80 /* AppDelegate.swift */; };
-		3C59E42B230A90790083FF80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C59E42A230A90790083FF80 /* ViewController.swift */; };
 		3C59E42E230A90790083FF80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C59E42C230A90790083FF80 /* Main.storyboard */; };
 		3C59E430230A907B0083FF80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C59E42F230A907B0083FF80 /* Assets.xcassets */; };
 		3C59E433230A907B0083FF80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C59E431230A907B0083FF80 /* LaunchScreen.storyboard */; };
+		3C59E43B230AA4DA0083FF80 /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C59E43A230AA4DA0083FF80 /* ToDoListViewController.swift */; };
+		3C59E43D230AA4F20083FF80 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C59E43C230AA4F20083FF80 /* AddItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3C59E425230A90790083FF80 /* PassValuePractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassValuePractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C59E428230A90790083FF80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3C59E42A230A90790083FF80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3C59E42D230A90790083FF80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3C59E42F230A907B0083FF80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C59E432230A907B0083FF80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C59E434230A907B0083FF80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C59E43A230AA4DA0083FF80 /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
+		3C59E43C230AA4F20083FF80 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +57,22 @@
 			isa = PBXGroup;
 			children = (
 				3C59E428230A90790083FF80 /* AppDelegate.swift */,
-				3C59E42A230A90790083FF80 /* ViewController.swift */,
+				3C59E43E230AA5320083FF80 /* Controller */,
 				3C59E42C230A90790083FF80 /* Main.storyboard */,
 				3C59E42F230A907B0083FF80 /* Assets.xcassets */,
 				3C59E431230A907B0083FF80 /* LaunchScreen.storyboard */,
 				3C59E434230A907B0083FF80 /* Info.plist */,
 			);
 			path = PassValuePractice;
+			sourceTree = "<group>";
+		};
+		3C59E43E230AA5320083FF80 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3C59E43A230AA4DA0083FF80 /* ToDoListViewController.swift */,
+				3C59E43C230AA4F20083FF80 /* AddItemViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C59E42B230A90790083FF80 /* ViewController.swift in Sources */,
+				3C59E43D230AA4F20083FF80 /* AddItemViewController.swift in Sources */,
+				3C59E43B230AA4DA0083FF80 /* ToDoListViewController.swift in Sources */,
 				3C59E429230A90790083FF80 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
