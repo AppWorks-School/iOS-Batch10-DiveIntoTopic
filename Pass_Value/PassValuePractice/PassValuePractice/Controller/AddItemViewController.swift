@@ -10,8 +10,21 @@ import UIKit
 
 class AddItemViewController: UIViewController {
 
+    @IBOutlet weak var inputField: UITextField!
+    
+    var touchHandler: ((String) -> Void)?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    }
+    
+    @IBAction func didTouchButton(_ sender: UIButton) {
+        
+        guard let text = inputField.text else { return }
+        
+        touchHandler?(text)
+        
+        navigationController?.popViewController(animated: true)
     }
 }

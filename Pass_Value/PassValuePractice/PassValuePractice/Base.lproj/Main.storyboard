@@ -68,6 +68,9 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTouchButton:" destination="xc2-J1-wYK" eventType="touchUpInside" id="2c1-YS-L9v"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="itK-F3-tHb">
                                 <rect key="frame" x="69" y="188" width="276" height="40"/>
@@ -90,6 +93,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="m4w-Oq-Qd2"/>
                     </view>
+                    <connections>
+                        <outlet property="inputField" destination="itK-F3-tHb" id="kl8-MN-8xW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bRS-pZ-oED" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

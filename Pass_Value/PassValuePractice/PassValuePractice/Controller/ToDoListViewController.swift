@@ -18,6 +18,20 @@ class ToDoListViewController: UIViewController {
         super.viewDidLoad()
 
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "AddItem",
+           let destinationVC = segue.destination as? AddItemViewController {
+            
+            destinationVC.touchHandler = { [weak self] text in
+                
+                self?.datas.append(text)
+                
+                self?.tableView.reloadData()
+            }
+        }
+    }
 }
 
 extension ToDoListViewController: UITableViewDataSource {
