@@ -63,6 +63,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        topView.backgroundColor = topArray.first?.color()
+        
+        bottomView.backgroundColor = bottomArray.first?.color()
     }
 }
 
