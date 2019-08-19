@@ -45,6 +45,8 @@ extension SelectionViewDataSource {
 
 extension SelectionViewDelegate {
     
+    func didSelectedButton(_ selectionView: SelectionView, at index: Int) { }
+    
     func shouldSelectedButton(_ selectionView: SelectionView, at index: Int) -> Bool { return true }
 }
 
@@ -61,6 +63,8 @@ class SelectionView: UIView {
     }
     
     weak var delegate: SelectionViewDelegate?
+    
+    var selectedIndex: Int?
     
     //MARK: - Private view object
     private var stackView: UIStackView = {
@@ -120,6 +124,8 @@ class SelectionView: UIView {
         
         let initialBtn = stackView.arrangedSubviews[dataSource.initialButtonIndex(self)]
         
+        selectedIndex = dataSource.initialButtonIndex(self)
+        
         indicatorView.backgroundColor = dataSource.colorOfIndicator(self)
         
         indicatorView.translatesAutoresizingMaskIntoConstraints = false
@@ -155,5 +161,7 @@ class SelectionView: UIView {
         animator.startAnimation()
         
         delegate?.didSelectedButton(self, at: sender.tag)
+        
+        selectedIndex = sender.tag
     }
 }
