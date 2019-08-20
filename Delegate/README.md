@@ -33,4 +33,4 @@
 2. 點選 SelectionView 內的選項，底下有一個 View 會跟著變色。
 3. 如果上方的 SelectionView 目前選取的 button 是最後一個，那下方的 SelectionView 則不可以被使用者控制。
 
-<img src="https://github.com/Wuchiwei/iOS/blob/master/Delegate/images/DelegatePractice.gif" alt="2019 MOPCON" width="433" height="860">
+<img src="https://github.com/Wuchiwei/iOS/blob/master/Delegate/images/DelegatePractice.gif" alt="Delegate" width="433" height="860">
