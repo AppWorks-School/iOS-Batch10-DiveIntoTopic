@@ -23,11 +23,11 @@ protocol SelectionViewDataSource: AnyObject {
     func initialButtonIndex(_ selectionView: SelectionView) -> Int
 }
 
-protocol SelectionViewDelegate: AnyObject {
+@objc protocol SelectionViewDelegate: AnyObject {
     
-    func didSelectedButton(_ selectionView: SelectionView, at index: Int)
+    @objc optional func didSelectedButton(_ selectionView: SelectionView, at index: Int)
     
-    func shouldSelectedButton(_ selectionView: SelectionView, at index: Int) -> Bool
+    @objc optional func shouldSelectedButton(_ selectionView: SelectionView, at index: Int) -> Bool
 }
 
 extension SelectionViewDataSource {
@@ -41,13 +41,6 @@ extension SelectionViewDataSource {
     func fontOfTitle(_ selectionView: SelectionView, at index: Int) -> UIFont { return UIFont.systemFont(ofSize: 18) }
     
     func initialButtonIndex(_ selectionView: SelectionView) -> Int { return 0 }
-}
-
-extension SelectionViewDelegate {
-    
-    func didSelectedButton(_ selectionView: SelectionView, at index: Int) { }
-    
-    func shouldSelectedButton(_ selectionView: SelectionView, at index: Int) -> Bool { return true }
 }
 
 class SelectionView: UIView {
@@ -145,7 +138,7 @@ class SelectionView: UIView {
     //MARK: - Action
     @objc private func userDidTouchButton(_ sender: UIButton) {
         
-        guard delegate?.shouldSelectedButton(self, at: sender.tag) == true else { return }
+        guard delegate?.shouldSelectedButton?(self, at: sender.tag) == true else { return }
         
         let animator = UIViewPropertyAnimator(duration: 0.2, curve: .easeInOut, animations: { [weak self] in
         
@@ -160,7 +153,7 @@ class SelectionView: UIView {
         
         animator.startAnimation()
         
-        delegate?.didSelectedButton(self, at: sender.tag)
+        delegate?.didSelectedButton?(self, at: sender.tag)
         
         selectedIndex = sender.tag
     }
