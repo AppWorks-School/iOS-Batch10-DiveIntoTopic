@@ -130,7 +130,9 @@ class SelectionView: UIView {
         NSLayoutConstraint.activate([
             indicatorView.bottomAnchor.constraint(equalTo: initialBtn.bottomAnchor),
             indicatorView.heightAnchor.constraint(equalToConstant: 2),
-            indicatorView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width * 80.0 / 375.0),
+            indicatorView.widthAnchor.constraint(
+                equalToConstant: UIScreen.main.bounds.width / CGFloat(dataSource.numberOfButtons(in: self)) / 2
+            ),
             indicatorCenterXContraint!
         ])
     }
