@@ -52,5 +52,9 @@ https://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=5012e8b
 
 ### Assignment
 
-1. 請利用上述 API，分別拿取 offset 為 0, 10, 20 的固定測速照相資料，Limit 都設定為 1 即可。
-2. 
+1. 設計一個 App，畫面上有 6 個 UILabel，位置沒有限制。
+2. 請利用上述 API，分別拿取 offset 為 0, 10, 20 的固定測速照相資料，Limit 都設定為 1 即可。
+3. 每兩個 UILabel 為一組，分別顯示 Response 中，"road" 與 "speed_limit" 的資料。
+4. 將步驟 2 的三個 Request 所拿到的 Response
+- 利用 GCD Group 的特性，將三個 Response 的資料，`同時` 呈現在畫面上。
+- 利用 GCD Semaphore 的特性，將三個 Response 的資料，依照 offset 的順序，`依序` 呈現在畫面上。
