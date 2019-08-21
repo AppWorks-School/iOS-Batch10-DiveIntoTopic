@@ -58,3 +58,5 @@ https://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=5012e8b
 4. 將步驟 2 的三個 Request 所拿到的 Response
 - 利用 GCD Group 的特性，將三個 Response 的資料，`同時` 呈現在畫面上。
 - 利用 GCD Semaphore 的特性，將三個 Response 的資料，依照 offset 的順序，`依序` 呈現在畫面上。
+
+<img src="https://github.com/Wuchiwei/iOS/blob/master/GCD/images/GCD.png" alt="GCD" width="433" height="860">
