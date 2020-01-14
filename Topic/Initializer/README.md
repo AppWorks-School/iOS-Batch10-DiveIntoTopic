@@ -77,3 +77,9 @@ class People {
 
 let luke = People(name: "Luke")
 ```
+
+9. 請問要 Create 一個 Initializer 的話，關鍵字為何？
+
+10. 請問要如何使用 Initializer？
+
+11. 一個物件要被 Initialize 的話，有什麼條件要滿足？
