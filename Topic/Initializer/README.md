@@ -13,3 +13,7 @@
 3. 
     * Create 一個 `struct Fruit`，擁有一個 property `name`, 型別為 `String`
     * Create 一個 `Fruit Object`, name 為 `Apple`，儲存在名為 `apple` 的變數裡面
+
+4. 
+    * Create 一個 `struct Car`，擁有一個 property `color`, 型別為 `String`
+    * Create 一個 `Car Object`, color 為 `blue`，儲存在名為 `benz` 的變數裡面
