@@ -6,6 +6,7 @@
 2. 黃色 View 直徑為螢幕寬度的一半，紅色 View 與紫色 View 直徑為黃色 View 的一半
 3. 黃色 View 位置為圓心正對螢幕的中心
 4. 請用 Auto Layout 實現
+5. 請勿使用 `viewDidAppear` method
 
 <img src="https://github.com/Wuchiwei/iOS/blob/master/AutoLayoutEventCycle/images/Smaple.png" alt="Delegate" width="433" height="860">
 
