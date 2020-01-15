@@ -8,3 +8,8 @@
 4. 請用 Auto Layout 實現
 
 <img src="https://github.com/Wuchiwei/iOS/blob/master/AutoLayoutEventCycle/images/Smaple.png" alt="Delegate" width="433" height="860">
+
+# Recap
+1. When did auto layout finish calculating in UIViewController?
+2. When did auto layout finish calculating in UIView?
+3. Auto Layout calculate sequence
