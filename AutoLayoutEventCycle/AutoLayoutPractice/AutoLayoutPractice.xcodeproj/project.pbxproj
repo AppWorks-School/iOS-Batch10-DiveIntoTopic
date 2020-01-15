@@ -15,6 +15,7 @@
 		3C09BBED23CEBCE6001C027F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C09BBEB23CEBCE6001C027F /* LaunchScreen.storyboard */; };
 		3C09BBF823CEBCE7001C027F /* AutoLayoutPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C09BBF723CEBCE7001C027F /* AutoLayoutPracticeTests.swift */; };
 		3C09BC0323CEBCE7001C027F /* AutoLayoutPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C09BC0223CEBCE7001C027F /* AutoLayoutPracticeUITests.swift */; };
+		3C09BC1123CEBFFC001C027F /* LukeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C09BC1023CEBFFC001C027F /* LukeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3C09BBFE23CEBCE7001C027F /* AutoLayoutPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoLayoutPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C09BC0223CEBCE7001C027F /* AutoLayoutPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutPracticeUITests.swift; sourceTree = "<group>"; };
 		3C09BC0423CEBCE7001C027F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C09BC1023CEBFFC001C027F /* LukeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LukeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				3C09BBE023CEBCE5001C027F /* AppDelegate.swift */,
 				3C09BBE223CEBCE5001C027F /* SceneDelegate.swift */,
 				3C09BBE423CEBCE5001C027F /* ViewController.swift */,
+				3C09BC1023CEBFFC001C027F /* LukeView.swift */,
 				3C09BBE623CEBCE5001C027F /* Main.storyboard */,
 				3C09BBE923CEBCE6001C027F /* Assets.xcassets */,
 				3C09BBEB23CEBCE6001C027F /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C09BBE523CEBCE5001C027F /* ViewController.swift in Sources */,
+				3C09BC1123CEBFFC001C027F /* LukeView.swift in Sources */,
 				3C09BBE123CEBCE5001C027F /* AppDelegate.swift in Sources */,
 				3C09BBE323CEBCE5001C027F /* SceneDelegate.swift in Sources */,
 			);

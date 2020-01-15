@@ -10,11 +10,27 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var yellowCircleView: LukeView!
+    
+    @IBOutlet weak var redCircleView: UIView!
+    
+    @IBOutlet weak var purpleCircleView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        yellowCircleView.clipsToBounds = true
     }
-
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        yellowCircleView.layer.cornerRadius = yellowCircleView.frame.width * 0.5
+        
+//        redCircleView.layer.cornerRadius = redCircleView.frame.width * 0.5
+//        
+//        purpleCircleView.layer.cornerRadius = purpleCircleView.frame.width * 0.5
+    }
 
 }
 
