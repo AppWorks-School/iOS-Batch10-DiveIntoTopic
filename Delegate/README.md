@@ -39,6 +39,7 @@
 
 當你完成了這份作業，你應該對底下的問題或敘述有一點想法：
 1. 為什麼需要在 `delegate` variable 前面加上 `weak`
+
 2. 為什麼需要在 protocol 後面加上 conform `AnyObject`
 
 ```swift
@@ -72,7 +73,8 @@ protocol SelectionViewDelegate: AnyObject {
 
 8. 如何做動畫
 
-9. 應該要以物件的角度去設計 App，當我們的資料分散在不同的 Array，我們應該要把這些資料，整合起來，最後變成一個裡面是 Object 的 Array。
+9. 應該要以物件的角度去設計 App，當我們的資料分散在不同的 Array 時，我們應該要把這些資料，整合起來，最後變成一個裡面是 Object 的 Array。
+**讓相關聯的資料，整合成一個物件，用物件的角度去描述事情，是物件導向最基本的概念**。
 
 **Not Preferred**
 
