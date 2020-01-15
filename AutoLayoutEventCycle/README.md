@@ -7,3 +7,4 @@
 3. 黃色 View 位置為圓心正對螢幕的中心
 4. 請用 Auto Layout 實現
 
+<img src="https://github.com/Wuchiwei/iOS/blob/master/AutoLayoutEventCycle/images/Smaple.png" alt="Delegate" width="433" height="860">
