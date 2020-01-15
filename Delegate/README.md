@@ -34,3 +34,78 @@
 3. 如果上方的 SelectionView 目前選取的 button 是最後一個，那下方的 SelectionView 則不可以被使用者控制。
 
 <img src="https://github.com/Wuchiwei/iOS/blob/master/Delegate/images/DelegatePractice.gif" alt="Delegate" width="433" height="860">
+
+# Recap
+
+當你完成了這份作業，你應該對底下的問題或敘述有一點想法：
+1. 為什麼需要在 `delegate` variable 前面加上 `weak`
+2. 為什麼需要在 protocol 後面加上 conform `AnyObject`
+
+```swift
+protocol SelectionViewDataSource: AnyObject {
+
+}
+
+protocol SelectionViewDelegate: AnyObject {
+    
+}
+```
+
+3. 如何宣告一個 `Optional` 的 protocol method.
+
+4. Protocol Extension 的功能是給予 protocol 一個 default 的 implemetation，當 conform 的 class 或 struct 沒有 implement 某個 method 的時候，iOS 就會使用在 Protocol Extension 裡面所寫的 method。也就是說，有在 Protocol Extension 裡面 Implementation 的 method，confrom protocol 的 instance 不一定要實作，類似 Optional method 的效果。
+
+5. Protocl Extension 與 Protocol Optional Method 有什麼不同？
+
+6. `Delegate Pattern` 其實是雙向的，過往我們習慣的用法是 **透過 delegate method 的 parameter 將資料由 View 或是 Model 傳送到 Controller**，但 Delegate Method 的 `return value` 是可以 **讓 Controller 傳 value 回到 View 或是 Model 裡面**。
+
+7. 為什麼在 protocol 裡面的 method，前面需要帶上 SelectionView？
+
+```swift
+@objc protocol SelectionViewDelegate: AnyObject {
+    
+    @objc optional func didSelectedButton(_ selectionView: SelectionView, at index: Int)
+    
+    @objc optional func shouldSelectedButton(_ selectionView: SelectionView, at index: Int) -> Bool
+}
+```
+
+8. 如何做動畫
+
+9. 應該要以物件的角度去設計 App，當我們的資料分散在不同的 Array，我們應該要把這些資料，整合起來，最後變成一個裡面是 Object 的 Array。
+
+**Not Preferred**
+
+```swift
+let topColor = [UIColor.red, UIColor.yellow]
+
+let topTitle = ["Red", "Yellow"]
+
+let bottomColor = [UIColor.red, UIColor.yellow, UIColor.blue]
+
+let bottomTitle = ["Red", "Yellow", "Blue"]
+```
+
+**Preferred**
+
+```swift
+
+struct ButtonModel {
+
+    let color: UIColor
+
+    let title: String
+}
+
+let topSource = [
+    ButtonModel(color: .red, title: "Red"),
+    ButtonModel(color: .yellow, title: "Yellow")
+]
+
+let bottomSource = [
+    ButtonModel(color: .red, title: "Red"),
+    ButtonModel(color: .yellow, title: "Yellow"),
+    ButtonModel(color: .blue, title: "Blue")
+]
+
+```
